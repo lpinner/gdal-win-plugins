@@ -1,4 +1,3 @@
-lpinner # gdal-win-plugins
 # Introduction
 This (kludgy) script will repackage the precompiled [GDAL](http://www.gdal.org) library and python bindings wheels from Cristoph Gohlke's [Unofficial Windows Binaries for Python Extension Packages](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal) and bundle in the ECW and MrSID plugins extracted from the [GIS Internals](http://www.gisinternals.com) MSVC 2008 installers.
 
