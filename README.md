@@ -8,10 +8,12 @@ The script requires the wheels and MSVC 2008 MSIs to be downloaded and placed in
 If you're just looking for an easy way to install GDAL with the ECW and MrSID plugins, try:
 
 If you have numpy 1.7 installed (i.e an ArcGIS 10.1 or 10.2 python installation)
-```pip install -i https://pypi.anaconda.org/luke/channel/np17/simple gdal```
+
+    pip install -i https://pypi.anaconda.org/luke/channel/np17/simple gdal
 
 If you have numpy 1.9 installed
-```pip install -i https://pypi.anaconda.org/luke/channel/np19/simple gdal```
+    
+    pip install -i https://pypi.anaconda.org/luke/channel/np19/simple gdal
 
 # Requirements
  - setuptools >= 18.4
