@@ -1,0 +1,24 @@
+{
+ "name": "GDAL", 
+ "summary": "GDAL: Geospatial Data Abstraction Library, python bindings and external plugins",
+ "license": "MIT and Proprietary", 
+ "url": "http://www.gdal.org", 
+ "author": "GDAL Project", 
+ "author_email": "gdal-dev@lists.osgeo.org", 
+ "maintainer": "GDAL", 
+ "maintainer_email": "gdal-dev@lists.osgeo.org", 
+ "description": "This is a version of the [GDAL](http://www.gdal.org) library and python bindings with the ECW, FileGDB and MrSID plugins, precompiled for 32 and 64 bit python 2.7 on Windows. The package is derived from either Cristoph Gohlke's GDAL [Package](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal) (requires numpy 1.9x) or the [GIS Internals](http://www.gisinternals.com) GDAL core and python MSIs (requires numpy 1.7x). The ECW and MrSID plugins are extracted from [GIS Internals](http://www.gisinternals.com) ECW and MrSID installers. This package includes only the core GDAL library, no utilities or scripts (i.e. gdal_translate.exe, gdal_calc.py) are included.", 
+ "classifiers": [
+  "Development Status :: 5 - Production/Stable", 
+  "Intended Audience :: Developers", 
+  "Intended Audience :: Science/Research", 
+  "Operating System :: Microsoft :: Windows", 
+  "Programming Language :: C", 
+  "Programming Language :: C++", 
+  "Programming Language :: Python :: 2.7", 
+  "License :: OSI Approved :: MIT License", 
+  "License :: Other/Proprietary License",
+  "Topic :: Scientific/Engineering :: GIS", 
+  "Topic :: Scientific/Engineering :: Information Analysis"
+ ]
+}

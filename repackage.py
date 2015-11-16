@@ -28,6 +28,15 @@
     Only files required to use the python bindings are included,
     the executables (i.e gdalinfo etc.) and python scripts (i.e gdal_calc.py)
     are not.
+
+    Run:
+        python repackage.py
+        python repackage.py --msi
+
+    Upload to binstar using:
+        binstar upload -c np19 dist-np19\GDAL*.whl
+        binstar upload -c np17 dist-np17\GDAL*.whl
+
 '''
 
 ## Imports
@@ -37,7 +46,6 @@ from distutils.dir_util import copy_tree
 from codecs import open
 import os,sys
 import argparse
-import fnmatch
 import glob
 import json
 import shutil
@@ -162,7 +170,7 @@ def repackage_wheel(whl, msis, platname, curdir, distdir, setupargs):
             **setupargs
         )
         inwhl = os.path.join(platlib,'dist','%s-%s-py2-none-any.whl'%(name,version))
-        outwhl = os.path.join(distdir,'%s-%s-cp27-none-%s.whl'%(name,version,platname))
+        outwhl = os.path.join(distdir,'%s-%snp19-cp27-none-%s.whl'%(name,version,platname))
         create_platform_wheel(inwhl, outwhl, platname, version)
 
     finally:
@@ -208,7 +216,7 @@ def repackage_msi(pymsi, msis, platname, name, curdir, distdir, setupargs):
             **setupargs
         )
         inwhl = os.path.join(pkgdir,'dist','%s-%s-py2-none-any.whl'%(name,version))
-        outwhl = os.path.join(distdir,'%s-%s-cp27-none-%s.whl'%(name,version,platname))
+        outwhl = os.path.join(distdir,'%s-%snp17-cp27-none-%s.whl'%(name,version,platname))
         create_platform_wheel(inwhl, outwhl, platname, version)
 
     finally:
